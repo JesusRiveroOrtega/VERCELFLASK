@@ -117,9 +117,7 @@ def handle_form_submission():
         print('Failed to parse form data', e)
         return jsonify({'error': 'Failed to parse form data'}), 400 
 
-@app.route('/', methods=['GET'])
-def fetch_data():
-    return jsonify({"message": "hola"})
+
 
 @app.route('/api/fetch-data', methods=['GET'])
 def fetch_data():
